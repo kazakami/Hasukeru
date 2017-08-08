@@ -128,7 +128,7 @@ namespace kazakami
       }
       else
       {
-        return "var" + c.GetHashCode() + " ";
+        return "var" + c.GetHashCode().ToString().Replace('-', 'm') + " ";
       }
     }
   }
